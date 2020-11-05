@@ -132,7 +132,7 @@ The factory firmware comes flashed with the custom fork of Marlin as well as the
 ## Shop
 
 ---
-- [FYSETC-E4 V1.0](https://www.aliexpress.com/item/FYSETC-F6-Board-ALL-in-one-Electronics-Solution-For-3D-Printer-CNC-Devices-Up-to-6/32911155606.html)
+- [FYSETC-E4 V1.0](https://www.aliexpress.com/item/1005001703930983.html)
 
 ## Tech Support
 

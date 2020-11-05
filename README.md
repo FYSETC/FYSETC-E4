@@ -127,7 +127,7 @@ The factory firmware comes flashed with the custom fork of Marlin as well as the
 4. Reset the FYSETC E4. It should now connect to your router.
 5. Connect the USB cable to E4 and your PC with 115200 baudrate, and send Serial command "[ESP111]" to get the E4 IP address.
 6. Use your web browser and visit the IP address you just get to access the web interface.
-7. You can now update the firmware. Download the custom fork from [here](https://github.com/FYSETC/FYSETC-E4/firmware), edit Configuration.h and Configuration_adv.h to suit your needs, then compile. In PlatformIO, you can add "upload_port = ip adderrs of your E4" to your platformio.ini file to allow OTA updates. Or, after the firmware has been compiled, use the web interface, go to "ESP3D" tab, and there is an option for firmware update that allows up to upload the firmware.bin file.
+7. You can now update the firmware. Download the custom fork from [here](https://github.com/FYSETC/FYSETC-E4/tree/main/firmware), edit Configuration.h and Configuration_adv.h to suit your needs, then compile. In PlatformIO, you can add "upload_port = ip adderrs of your E4" to your platformio.ini file to allow OTA updates. Or, after the firmware has been compiled, use the web interface, go to "ESP3D" tab, and there is an option for firmware update that allows up to upload the firmware.bin file.
 
 ## Shop
 

@@ -107,7 +107,7 @@ There are two versions of the E4 board. One is that the antenna of the WiFi modu
 ## Pin Definition
 
 ---
-![E4主板PIN脚图](images/E4主板PIN脚图.jpg)
+![E4主板PIN脚图2](images/E4主板PIN脚图2.jpg)
 
 ## Dimensions
 

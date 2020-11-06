@@ -1,6 +1,6 @@
 ## Product Introduction
 
----
+
 
 ![E4正面2](images/E4正面2.png)
 
@@ -8,7 +8,6 @@ The E4 board is a minimal 3D printer control board based on the ESP32 microcontr
 
 ## Features
 
----
 
 - Compact size: 90mm x 67mm
 - Native Wi-Fi support

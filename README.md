@@ -114,7 +114,7 @@ There are two versions of the E4 board. One is that the antenna of the WiFi modu
 ![E4尺寸图](images/E4尺寸图.png)
 
 ---
-- [Schematic and PCB files](https://github.com/FYSETC/FYSETC-E4/tree/main/firmware)
+- [Schematic and PCB files](https://github.com/FYSETC/FYSETC-E4/tree/main/hardware)
 
 ## Firmware
 

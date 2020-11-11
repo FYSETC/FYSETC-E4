@@ -118,7 +118,7 @@ There are two versions of the E4 board. One is that the antenna of the WiFi modu
 
 ## Firmware
 
-The factory firmware comes flashed with the custom fork of Marlin as well as the web interface. You can get it in our [github](https://github.com/FYSETC/FYSETC-E4). Always you need to modify it base on your machine configuration. You can follow our video or the following steps :
+The factory firmware comes flashed with the custom fork of Marlin as well as the web interface. You can get it in our [github](https://github.com/FYSETC/FYSETC-E4). Always you need to modify it base on your machine configuration. You can follow our [video](https://youtu.be/Skz7xW8TiHI) or the following steps :
 
 1. Turn on power to the FYSETC E4, and then connect your PC, smart phone, or tablet to the SSID "MARLIN_ESP" (default password is "12345678").
 2. Once connected, open a web browser, and go to "[http://192.168.0.1/](http://www.google.com/url?q=http%3A%2F%2F192.168.0.1%2F&sa=D&sntz=1&usg=AFQjCNHmcUXoQvvfhtmwWsGrZOfa2vJB6A)" which will load the ESP3D web interface.

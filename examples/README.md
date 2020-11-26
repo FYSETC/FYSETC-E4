@@ -1,0 +1,3 @@
+# Examples
+
+This folder will contains machine examples that E4 board supporting. If you can't find your printer here , it does not mean E4 board does not support it , just because we don't add it at the moment. We strongly encourage you to make PR  for us and here is the [tutorial](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request). Thanks for your support. 

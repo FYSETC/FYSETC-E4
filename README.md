@@ -118,6 +118,8 @@ There are two versions of the E4 board. One is that the antenna of the WiFi modu
 
 ## Firmware
 
+### How to use
+
 The factory firmware comes flashed with the custom fork of Marlin as well as the web interface. You can get it in our [github](https://github.com/FYSETC/FYSETC-E4). Always you need to modify it base on your machine configuration. You can follow our [video](https://youtu.be/Skz7xW8TiHI) or the following steps :
 
 1. Turn on power to the FYSETC E4, and then connect your PC, smart phone, or tablet to the SSID "MARLIN_ESP" (default password is "12345678").
@@ -127,6 +129,16 @@ The factory firmware comes flashed with the custom fork of Marlin as well as the
 5. Connect the USB cable to E4 and your PC with 115200 baudrate, and send Serial command "[ESP111]" to get the E4 IP address.
 6. Use your web browser and visit the IP address you just get to access the web interface.
 7. You can now update the firmware. Download the custom fork from [here](https://github.com/FYSETC/FYSETC-E4/tree/main/firmware), edit Configuration.h and Configuration_adv.h to suit your needs, then compile. In PlatformIO, you can add "upload_port = ip adderrs of your E4" to your platformio.ini file to allow OTA updates. Or, after the firmware has been compiled, use the web interface, go to "ESP3D" tab, and there is an option for firmware update that allows up to upload the firmware.bin file.
+
+### Compile the firmware yourself
+
+If you want to compile the firmware yourself, you need to 
+
+1. Edit the `configuration.h` and `configuration_adv.h` file , please follow the README [here](https://github.com/luc-github/ESP3DLib).
+
+2. Change env in `platformio.ini` to `FYSETC_E4`
+
+   ```default_envs = FYSETC_E4```
 
 ## Shop
 

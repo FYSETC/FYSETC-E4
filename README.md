@@ -143,7 +143,8 @@ If you want to compile the firmware yourself, you need to
 ## Shop
 
 ---
-- [FYSETC-E4 V1.0](https://www.aliexpress.com/item/1005001703930983.html)
+- [Taobao](https://item.taobao.com/item.htm?spm=a230r.1.14.22.66cd74cfpASnTX&id=641701271442&ns=1&abbucket=1#detail)
+- [Aliexpress](https://www.aliexpress.com/item/1005001703930983.html)
 
 ## Tech Support
 

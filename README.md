@@ -1,13 +1,10 @@
 ## Product Introduction
 
-
-
 ![E4正面2](images/E4正面2.png)
 
 The E4 board is a minimal 3D printer control board based on the ESP32 microcontroller from ESPRESSIF, with built-in Wi-Fi and Bluetooth. The controller speed is up to 240MHz, 16M flash.
 
 ## Features
-
 
 - Compact size: 90mm x 67mm
 - Native Wi-Fi support
@@ -52,41 +49,36 @@ One common problem when using inductive or capactive probes is the voltage which
 The FYSETC E4 has a dedicated connector for such a Z probe which uses the voltage of the power supply to power the probe. If you are using 12V for the power supply, the probe will be running on 12V, and vice versa for when using a 24V power supply. This allows the probe to operate within its specifications, delivering optimal detection distances.
 
 ### Onboard or External Antenna
----
+
 There are two versions of the E4 board. One is that the antenna of the WiFi module is onboard. And the other is a WiFi module with an external antenna. This option give you the choice  that if you want to install board in a closed box, the external antenna can avoid the problem of WIFI signal weakening in a confined space.
 
-| Onboard Antenna                  | External Antenna                 |
-| -------------------------------- | -------------------------------- |
+| Onboard Antenna              | External Antenna             |
+| ---------------------------- | ---------------------------- |
 | ![E4主板11](images/E4主板11.jpg) | ![E4主板22](images/E4主板22.jpg) |
 
-​	
-
-
+​    
 
 ## Hardware Reasources
----
 
 ![E4正面](images/E4正面.png)
 
-| Board Name       | E4                                                           |
-| ---------------- | ------------------------------------------------------------ |
-| Latest Version   | V1.0                                                         |
-| Extruders        | 1                                                            |
-| Hotbed           | 1                                                            |
-| Controlled Fans  | 1                                                            |
-| Heaters          | 1                                                            |
-| Endstops         | 3                                                            |
-| Temp sensor      | 2                                                            |
-| Serial port chip | CH340                                                        |
+| Board Name       | E4                                                                                                                                                                                                                                                                         |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Latest Version   | V1.0                                                                                                                                                                                                                                                                       |
+| Extruders        | 1                                                                                                                                                                                                                                                                          |
+| Hotbed           | 1                                                                                                                                                                                                                                                                          |
+| Controlled Fans  | 1                                                                                                                                                                                                                                                                          |
+| Heaters          | 1                                                                                                                                                                                                                                                                          |
+| Endstops         | 3                                                                                                                                                                                                                                                                          |
+| Temp sensor      | 2                                                                                                                                                                                                                                                                          |
+| Serial port chip | CH340                                                                                                                                                                                                                                                                      |
 | CPU              | 240MHz [ESP32-WROOM-32E](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf), [ESP32-WROOM-32UE](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf) |
-| FLASH Size       | 16MB                                                         |
-| Stepper driver   | 4 * TMC2209                                                  |
-| Input            | Main PWR：12-24V 22.5A Max                                   |
-| Output           | BED+Heater OUT：15A Max                                      |
-
+| FLASH Size       | 16MB                                                                                                                                                                                                                                                                       |
+| Stepper driver   | 4 * TMC2209                                                                                                                                                                                                                                                                |
+| Input            | Main PWR：12-24V 22.5A Max                                                                                                                                                                                                                                                  |
+| Output           | BED+Heater OUT：15A Max                                                                                                                                                                                                                                                     |
 
 ## Jumper Introduction
----
 
 **Fan power jumper**
 
@@ -106,7 +98,35 @@ There are two versions of the E4 board. One is that the antenna of the WiFi modu
 
 ## Pin Definition
 
----
+<table>
+   <tr><td>Features</td><td>E4 Pin</td><td>ESP32 Pin</td><td>Pin No.</td><td>Comment</td></tr>
+   <tr><td rowspan="3">X-MOTOR(1)</td><td>X-Step</td><td>27</td><td>12</td><td></td></tr>
+   <tr><td>X-DIR</td><td>26</td><td>11</td><td></td></tr>
+   <tr><td>X-EN</td><td>25</td><td>10</td><td></td></tr>
+   <tr><td rowspan="3">Y-MOTOR(2)</td><td>Y-Step</td><td>33</td><td>9</td><td></td></tr>
+   <tr><td>Y-DIR</td><td>32</td><td>8</td><td></td></tr>
+   <tr><td>Y-EN</td><td>25</td><td>10</td><td></td></tr>
+   <tr><td rowspan="3">Z-MOTOR(3)</td><td>Z-Step</td><td>14</td><td>13</td><td></td></tr>
+   <tr><td>Z-DIR</td><td>12</td><td>14</td><td></td></tr>
+   <tr><td>Z-EN</td><td>25</td><td>10</td><td></td></tr>
+   <tr><td rowspan="3">E0-MOTOR(4)</td><td>E0-Step</td><td>16</td><td>27</td><td></td></tr>
+   <tr><td>E0-DIR</td><td>17</td><td>28</td><td></td></tr>
+   <tr><td>E0-EN</td><td>25</td><td>10</td><td></td></tr>
+   <tr><td rowspan="3">SPI </td><td>MOSI</td><td>23</td><td>37</td><td></td></tr>
+   <tr><td>MISO</td><td>19</td><td>31</td><td></td></tr>
+   <tr><td>SCK</td><td>18</td><td>30</td><td></td></tr>
+   <tr><td rowspan="2">End-stops</td><td>X-MIN</td><td>34</td><td>6</td><td>Share with X-DIAG</td></tr>
+   <tr><td>Y-MIN</td><td>35</td><td>7</td><td>Share with Y-DIAG</td></tr>
+   <tr><td>Z-MIN</td><td>15</td><td>23</td><td>Share with Z-DIAG</td></tr>
+   <tr><td rowspan="1">FAN</td><td>FAN0</td><td>13</td><td>16</td><td></td></tr>
+   <tr><td rowspan="2">Heating</td><td>E0-Heater</td><td>2</td><td>24</td><td></td></tr>
+   <tr><td>Heated-Bed</td><td>4</td><td>26</td><td></td></tr>
+   <tr><td rowspan="2">Temperature</td><td>TE0（THERM0）</td><td>36</td><td>4</td><td>A 4.7kOhm 0.1% temperature sensor pull up resistor is used,PT1000 can be connected directly. For PT100, an amplifier board must be used.</td></tr>
+   <tr><td>TB</td><td>39</td><td>5</td><td></td></tr>
+   <tr><td rowspan="2">MOTOR UART</td><td>TX1</td><td>22</td><td>35</td><td></td></tr>
+   <tr><td>RX1</td><td>21</td><td>34</td><td></td></tr>
+</table>
+
 ![E4主板PIN脚图2](images/E4主板PIN脚图2.jpg)
 
 ## Dimensions
@@ -114,6 +134,7 @@ There are two versions of the E4 board. One is that the antenna of the WiFi modu
 ![E4尺寸图](images/E4尺寸图.png)
 
 ---
+
 - [Schematic and PCB files](https://github.com/FYSETC/FYSETC-E4/tree/main/hardware)
 
 ## Firmware
@@ -137,17 +158,18 @@ If you want to compile the firmware yourself, you need to
 1. Edit the `configuration.h` and `configuration_adv.h` file , please follow the README [here](https://github.com/luc-github/ESP3DLib).
 
 2. Change env in `platformio.ini` to `FYSETC_E4`
-
+   
    ```default_envs = FYSETC_E4```
 
 ## Shop
 
 ---
+
 - [Taobao](https://item.taobao.com/item.htm?spm=a230r.1.14.22.66cd74cfpASnTX&id=641701271442&ns=1&abbucket=1#detail)
 - [Aliexpress](https://www.aliexpress.com/item/1005001703930983.html)
 
 ## Tech Support
 
 ---
-Please submit any technical issue into our [github](https://github.com/FYSETC/FYSETC-E4) or [forum](http://forum.fysetc.com/) 
 
+Please submit any technical issue into our [github](https://github.com/FYSETC/FYSETC-E4) or [forum](http://forum.fysetc.com/) 

@@ -161,6 +161,10 @@ If you want to compile the firmware yourself, you need to
    
    ```default_envs = FYSETC_E4```
 
+#### Marlin 2.1.x
+
+Get the code from Marlin github [here](https://github.com/MarlinFirmware/Marlin), and the related configuration [here](https://github.com/luc-github/MarlinConfigurations/tree/bugfix-2.1.x/config/examples/FYSETC/E4).
+
 ## Shop
 
 ---

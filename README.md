@@ -115,7 +115,7 @@ There are two versions of the E4 board. One is that the antenna of the WiFi modu
    <tr><td rowspan="3">SPI </td><td>MOSI</td><td>23</td><td>37</td><td></td></tr>
    <tr><td>MISO</td><td>19</td><td>31</td><td></td></tr>
    <tr><td>SCK</td><td>18</td><td>30</td><td></td></tr>
-   <tr><td rowspan="2">End-stops</td><td>X-MIN</td><td>34</td><td>6</td><td>Share with X-DIAG</td></tr>
+   <tr><td rowspan="3">End-stops</td><td>X-MIN</td><td>34</td><td>6</td><td>Share with X-DIAG</td></tr>
    <tr><td>Y-MIN</td><td>35</td><td>7</td><td>Share with Y-DIAG</td></tr>
    <tr><td>Z-MIN</td><td>15</td><td>23</td><td>Share with Z-DIAG</td></tr>
    <tr><td rowspan="1">FAN</td><td>FAN0</td><td>13</td><td>16</td><td></td></tr>
